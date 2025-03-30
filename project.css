@@ -1,0 +1,14 @@
+body {
+  background-color: black;
+  color: white;
+  text-align: center;
+  font-size: large;
+}
+
+span{
+  color: #00ffee;
+}
+h2 span{
+  color: #00ffee;
+  font-size: xx-larger;
+}

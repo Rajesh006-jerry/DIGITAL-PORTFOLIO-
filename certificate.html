@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate</title>
+    <link rel="stylesheet" href="certificate.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+<body>
+
+
+    <section class="work" id="work">
+        <div class="title">
+            <h2 class="section-title" data-aos="fade-up" data-aos-duration="1000">My CERTIFICATES (RAJESH S)</h2>
+        </div>
+        <div class="content">
+            <div class="card" data-aos="fade-right" data-aos-duration=>
+                <div class="card-img">
+                    <img src="certificate1.jpg" alt="">
+                </div>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <div class="card-img">
+                    <img src="certificate2.jpg" alt="">
+                </div>
+            </div>
+            <div class="card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <div class="card-img">
+                    <img src="certificate3.jpg" alt="">
+                </div>
+            </div>
+            <div class="card" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="400">
+                <div class="card-img">
+                    <img src="certificate4.jpg" alt="">
+                </div>
+            </div>
+            <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <div class="card-img">
+                    <img src="certificate5.jpg" alt="">
+                </div>
+            </div>
+            <div class="card" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+                <div class="card-img">
+                    <img src="certificate6.jpg" alt="">
+                </div>
+            </div>            
+        </div>
+          <br><br>   
+         <button> <a href="project.html">PROJECT</button></a>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({offset:0});
+    </script>
+    <script>
+
+        window.addEventListener("scroll", function(){
+    scrollBtn.classList.toggle("active", window.scrollY > 500);
+});
+
+
+        const menuBtn = document.querySelector(".menu-btn");
+        const navigation = document.querySelector(".navigation");
+        const navigationItems = document.querySelector(".navigation a");
+
+        menuBtn.addEventListener("click", () => {
+            menuBtn.classList.toggle("active");
+            navigation.classList.toggle("active");
+        })
+
+        // Navigation Effects
+        window.addEventListener("scroll", function(){
+            const header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+
+        navigationItems.forEach((navigationItem) => {
+            navigationItem.addEventListener("click", () => {
+                menuBtn.classList.remove("active");
+                navigation.classList.remove("active")
+            })
+        })
+
+
+
+    </script>
+</body>
+</html>

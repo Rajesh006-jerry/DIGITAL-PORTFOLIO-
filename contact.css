@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: #00ffee;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contact-container {
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ffee;
+    width: 800px;
+    height: 460px;
+    text-align: center;
+    
+}
+button a{
+    color: white;
+    text-decoration: none;
+}
+
+h2 {
+    margin-bottom: 10px;l
+    color: #00ffee;
+    text-shadow: 0 0 10px #00FFee;
+}
+
+p {
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #00ffee;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px;
+    background: #00ffee;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #00ffee;
+    text-shadow: 0 0 10px #00FFee;
+}
+.social-links i{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background-color:transparent;
+    border: 0.2rem solid #00FFee;
+    border-radius: 50%;
+    color:#00FFee;
+    margin: 5px 10px;
+    font-size: 1.5rem;
+    transition: 0.2s linear;
+}
+.social-links i:hover{
+    scale: 1.3;
+    color: white;
+    background-color: #00FFee;
+    filter: drop-shadow(0 0 10px #00FFee);
+}
+

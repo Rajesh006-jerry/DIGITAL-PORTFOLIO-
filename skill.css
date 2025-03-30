@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+button {
+    background-color: #00ffee;
+    box-shadow: 0 0 40px #00FFee;
+    color: Black;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: left;
+  font-size: x-large;
+}   
+
+button a {
+    color: white;
+   padding: 8px 14px;
+   text-decoration: none; 
+    
+}
+body {
+    color: white;
+    background: black;
+}
+.sub-title {
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+    padding-top: 30px;
+}
+.sub-title span {
+    color: #00ffee;
+    text-shadow: 0 0 6px #00FFee;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+.container1 {
+    width: 600px;
+    height: 500px;
+    padding: 75px 90px;
+    margin-left: 120px;
+}
+.heading {
+    text-align: center;
+    text-decoration: white;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+    color: #00ffee;
+    position: relative;
+    left: -290PX;
+    font-size: xx-large;
+}
+
+.bar {
+    font-size: 23px;
+}
+.Technical-bars .bar {
+    margin: 40px 0;
+}
+.Technical-bars .bar:first-child {
+    margin-top: 0;
+}
+.Technical-bars .bar:last-child {
+    margin-bottom: 0;
+}
+.Technical-bars .bar.info {
+    margin-bottom: 5px;
+}
+.Technical-bars .bar.info span {
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+.Technical-bars .bar .progress-line {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color: lavender;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+.Technical-bars .bar .progress-line span {
+    height: 100%;
+    background-color: #00FFee;
+    text-shadow: 0 0 6px #00FFee;
+    position: absolute;
+    border-radius: 10px;
+    animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+}
+.progress-line.html span {
+    width: 90%;
+}
+.progress-line.css span {
+    width: 76%;
+}
+.progress-line.javascript span {
+    width: 85%;
+}
+.progress-line.python span {
+    width: 50%;
+}
+.progress-line.java span {
+    width: 75%;
+}
+.progress-line span::after {
+    position: absolute;
+    padding: 1px 8px;
+    background-color: #00FFEE;
+    color: black;
+    font-size: 12px;
+    border-radius: 3px;
+    top: -28px;
+    right: -20px;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+.progress-line.html span::after {
+    content: "90%";
+}
+.progress-line.css span::after {
+    content: "60%";
+}
+.progress-line.javascript span::after {
+    content: "85%";
+}
+.progress-line.python span::after {
+    content: "50%";
+}
+.progress-line.java span::after {
+    content: "75%";
+}
+.progress-line span::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-color: white;
+    top: -10px;
+    right: 0;
+    animation: showText 0.5s 1.5s linear forwards;
+    opacity: 0;
+}
+@keyframes showText {
+    100% {
+        opacity: 1;
+    }
+}
+.heading1 spa{color: #0ef;}
+.radial-bars {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.radial-bars .radial-bar {
+    width: 100%;
+    height: 170px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.radial-bars .radial-bar svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 120px;
+    height: 160px;
+}
+.radial-bars .radial-bar .progress-bar {
+    stroke-width: 10;
+    stroke: white;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+    text-shadow: 0 0 6px #00FFee;
+    animation: animate-bar 1s linear forwards;
+}
+@keyframes animate-bar {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+.path {
+    stroke-width: 10;
+    stroke: #00ffee;
+    text-shadow: 0 0 6px #00FFee;
+    fill: transparent;
+    stroke-dasharray: 502;
+    stroke-dashoffset: 502;
+    stroke-linecap: round;
+}
+.path-1 {
+    animation: animate-path1 1s 1s linear forwards;
+}
+.path-2 {
+    animation: animate-path1 1s 1s linear forwards;
+}
+.path-3 {
+    animation: animate-path1 1s 1s linear forwards;
+}
+.path-4 {
+    animation: animate-path1 1s 1s linear forwards;
+}
+@keyframes animate-path1 {
+    100% {
+        stroke-dashoffset: 50;
+    }
+}
+@keyframes animate-path2 {
+    100% {
+        stroke-dashoffset: 175;
+    }
+}
+@keyframes animate-path3 {
+    100% {
+        stroke-dashoffset: 125;
+    }
+}
+@keyframes animate-path4 {
+    100% {
+        stroke-dashoffset: 75;
+    }
+}
+.radial-bar .percentage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+.progress-bar .text {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%);
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
